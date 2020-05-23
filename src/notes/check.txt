@@ -1,0 +1,52 @@
+ check units and hours{
+data given: subid ==> units
+
+if(units == "3"){
+	equivalent hrs = 3 hrs per week;
+
+      [MWF] day1 scheme = 3 hrs (1 hrs monday, 1 hrs wednesday, 1 hrs friday)
+      [TTh] day2 scheme = 3 hrs (1.5 hrs tuesday, 1.5 hrs thursday)
+
+}else if (unit == "4"){
+	equivalent hrs = 4 hrs per week;
+}else if (unit == "5"){
+	equivalent hrs = 5 hrs per week;
+}else if (unit == "6"){
+	equivalent hrs = 6 hrs per week;
+
+
+   }
+}
+
+
+
+=============================================
+
+
+check day{
+datagiven: roomid = day
+
+
+[MWF] room = 5 hrs (3 hrs lecture, 2 hrs laboratory)  
+[TTh] room = 5 hrs (3 hrs lecture, 2 hrs laboratory)
+  
+
+}else if (day == "5"){
+	equivalent 1 week = 10 units;
+		OR
+	equivalent 10 units per week;
+
+
+4 hrs laboratory = per week
+6 hrs lecture = per week
+
+
+}else if (units == "10"){
+	equivalent == 10 hrs
+
+}
+ 
+}
+
+}
+  

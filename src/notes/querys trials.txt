@@ -1,0 +1,4 @@
+#SELECT schedule.schedid, faculty.facname, faculty.facid, room.name, room.day, room.time, room.etime, schedule.course_and_year 
+ #       FROM schedule INNER JOIN faculty ON schedule.facid = faculty.facid AND faculty.facid='AJO12259700' INNER JOIN room ON schedule.roomid = room.roomid;
+ 
+ SELECT schedule.schedid, room.name, room.day, room.time, room.etime FROM schedule INNER JOIN room ON schedule.roomid = room.roomid WHERE room.roomid='185' HAVING time = '  12:00:01' AND etime = '  13:00:00';
